@@ -6,7 +6,7 @@ import portrait from "../assets/img/portrait.jpeg"
 
 
 export const Banner = () => {
-    const toRotate = ["an Aspiring Coder","an Aviation Geek","a F1 Enthutiast"]
+    const toRotate = ["an Aspiring Coder","an Aviation Geek","a F1 Enthusiast"]
     const [loopNumber, setLoopNumber] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false)
     const [text, setText] = useState('')
