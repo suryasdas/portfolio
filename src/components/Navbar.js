@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { Navbar, Container, Nav } from "react-bootstrap"
 // import { Github } from "react-bootstrap-icons"
-import logo from "../assets/img/logo.svg"
+import logo from "../assets/img/logo.png"
 import navIcon1 from "../assets/img/nav-icon1.svg"
 import navIcon2 from "../assets/img/pngwing.com-2.png"
 
@@ -42,7 +42,7 @@ export const NavBar = () => {
                     <Nav className="me-auto">
                         <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                         <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-                        <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                        <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Experience</Nav.Link>
                         <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
                     </Nav>
                     <span className="navbar-text">
@@ -50,9 +50,8 @@ export const NavBar = () => {
                             <a href="https://www.linkedin.com/in/suryasdas"><img src={navIcon1} alt="" /></a>
                             <a href="https://www.github.com/suryasdas"><img src={navIcon2} alt="" /></a>
                         </div>
-                        <button className="vvd" onClick={() => "#contact"}>
-                            <span>Let's connect!</span>
-                        </button>
+                        <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}><button>Let's Connect</button> </Nav.Link>
+
                         {/* <button href="#contact" className="vvd"><span>Let's connect!</span></button> */}
                     </span>
                 </Navbar.Collapse>

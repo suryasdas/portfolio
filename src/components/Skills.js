@@ -1,10 +1,13 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import meter1 from "../assets/img/meter1.svg"
-import meter2 from "../assets/img/meter2.svg"
-import meter3 from "../assets/img/meter3.svg"
 import colorsharp from "../assets/img/color-sharp.png"
+import react from "../assets/img/react.png"
+import python from "../assets/img/python.png"
+import angular from "../assets/img/angular.png"
+import django from "../assets/img/django.png"
+import typescript from "../assets/img/typescript.png"
+import javascript from "../assets/img/javascript.png"
 
 
 export const Skills = () => {
@@ -37,23 +40,30 @@ export const Skills = () => {
                       <h2>
                         Skills
                       </h2>
-                      <p>Random text</p>
                       <Carousel responsive = {responsive} infinite = {true} className='skill-slider'>
                         <div className='item'>
-                          <img src={meter1} alt=''/>
-                          <h5>Web development</h5>
+                          <img src={react} alt='' className='imground'/>
+                          <h5>React</h5>
                         </div>
                         <div className='item'>
-                          <img src={meter2} alt=''/>
-                          <h5>Brand Identity</h5>
+                          <img src={python} alt='' />
+                          <h5>Python</h5>
                         </div>
                         <div className='item'>
-                          <img src={meter3} alt=''/>
-                          <h5>Logo Design</h5>
+                          <img src={angular} alt='' />
+                          <h5>Angular</h5>
                         </div>
                         <div className='item'>
-                          <img src={meter3} alt=''/>
-                          <h5>Skill development</h5>
+                          <img src={typescript} alt='' />
+                          <h5>TypeScript</h5>
+                        </div>
+                        <div className='item'>
+                          <img src={javascript} alt='' />
+                          <h5>JavaScript</h5>
+                        </div>
+                        <div className='item'>
+                          <img src={django} alt='' />
+                          <h5>Django</h5>
                         </div>
                       </Carousel>
                     </div>

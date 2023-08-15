@@ -58,6 +58,13 @@ img {
   height: auto;
 }
 
+.imground{
+  border-radius: 50%; /* Creates a round shape */
+  overflow: hidden; /* Hides any content outside the rounded shape */
+  width: 100%;
+  height: auto;
+}
+
 button {
   border: 0;
   background-color: transparent;
@@ -341,6 +348,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+.education{
+  align-items: center;
+  justify-content: center;
+}
+
 .project {
   padding: 120px 0;
   position: relative;
@@ -418,7 +430,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  width:50vh;
+  height:40vh;
 }
+
+.imgbck {
+  width:50vh;
+  height:40vh;
+}
+
+.proj-div {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);

@@ -1,26 +1,24 @@
 import { Col, Container, Row, Nav, Tab } from "react-bootstrap"
-import projImg1 from "../assets/img/project-img1.png"
-import projImg2 from "../assets/img/project-img2.png"
-import projImg3 from "../assets/img/project-img3.png"
+import nyu from "../assets/img/nyu-tandon.jpg"
+import csulb from "../assets/img/csulb.png"
 import { ProjectCard } from "./ProjectCard"
 import colorSharp2 from "../assets/img/color-sharp2.png"
 
 
 export const Projects = () => {
-    const projects = [{
-        title: "random 1",
-        description: "random description 1",
-        imgUrl: projImg1
+    const education = [{
+        university: "New York University",
+        location:"Brooklyn, NY",
+        degree: "Masters of Science - Computer Engineering",
+        gradDate:'May 2024',
+        imgUrl: nyu
     },
     {
-        title: "random 2",
-        description: "random description 2",
-        imgUrl: projImg2
-    },
-    {
-        title: "random 3",
-        description: "random description 3",
-        imgUrl: projImg3
+        university: "Long Beach State University",
+        location:"Long Beach, CA",
+        degree: "Bachelors of Science - Computer Science",
+        gradDate:'May 2021',
+        imgUrl: csulb
     }];
 
     return (
@@ -28,29 +26,29 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Projects</h2>
-                        <p>insert text here later</p>
+                        <h2>Experience</h2>
+                        <p></p>
                         <Tab.Container id="projects-tabs" defaultActiveKey='first'>
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                                    <Nav.Link eventKey="first">Education</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                                    <Nav.Link eventKey="second">Work</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                                    <Nav.Link eventKey="third">Projects</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <Row>
                                         {
-                                            projects.map((project, index) => {
+                                            education.map((education, index) => {
                                                 return (
                                                     <ProjectCard
                                                         key={index}
-                                                        {...project} />
+                                                        {...education} />
                                                 )
                                             })
                                         }
