@@ -59,7 +59,7 @@ export const Banner = () => {
                         </span>
                         <h1><span className="wrap">
                             {text}</span></h1>
-                        <p>A computer engineering graduate with a strong foundation in software development and technical consulting, is actively seeking engaging opportunities in the field. With a comprehensive academic background and hands-on experience in web and mobile application development, Surya aims to utilize expertise in React, Angular, and backend technologies to bring value to innovative projects. Eager to collaborate with diverse teams, Surya is committed to applying adept problem-solving skills to create efficient, user-centric solutions for a progressive organization.</p>
+                        <p>A computer engineering graduate with a strong foundation in software development and technical consulting, is actively seeking engaging opportunities in the field. With a comprehensive academic background and hands-on experience in web application development, I aim to utilize expertise in React, Angular, and backend technologies to bring value to innovative projects. Eager to collaborate with diverse teams, I am committed to applying adept problem-solving skills to create efficient, user-centric solutions for a progressive organization.</p>
                         <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}><button>Let's Connect<ArrowRightCircle size={25}></ArrowRightCircle></button> </Nav.Link>
                     </Col>
                     <Col xs ={12} md={6} xl={4}>
