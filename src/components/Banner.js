@@ -45,8 +45,6 @@ export const Banner = () => {
             setLoopNumber(loopNumber+1)
             setDelta(500)
         }
-
-        
     }
 
     return (
@@ -69,5 +67,4 @@ export const Banner = () => {
             </Container>
         </section>
     )
-
 }
