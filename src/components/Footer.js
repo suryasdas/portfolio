@@ -10,7 +10,7 @@ export const Footer = () => {
                     <Col sm={6}>
                     </Col>
                     <Col sm={6} className="text-center text-sm-end">
-                        <p>Copyright 2023. All Rights Reserved.</p>
+                        <p></p>
                     </Col>
                 </Row>
             </Container>

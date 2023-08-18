@@ -5,7 +5,7 @@ import portrait from "../assets/img/portrait.png"
 
 
 export const Banner = () => {
-    const toRotate = ["An Aspiring Coder.","An Aviation Geek.","A F1 Enthusiast.","A Rookie Gamer."]
+    const toRotate = ["an Aspiring Coder.","an Aviation Geek.","a F1 Enthusiast.","a Rookie Gamer."]
     const [loopNumber, setLoopNumber] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false)
     const [text, setText] = useState('')
@@ -57,7 +57,7 @@ export const Banner = () => {
                     <span className="tagline">
                             SURYA SATHANUR DAS
                         </span>
-                        <h1><span className="wrap">
+                        <h1>{`I'm `}<span className="wrap">
                             {text}</span></h1>
                         <p>A <strong>computer engineering</strong> graduate with a strong foundation in web and software development, is actively seeking engaging opportunities in the field. With a comprehensive academic background and hands-on experience in <strong>web application</strong> development, I aim to utilize expertise in <strong>React</strong>, <strong>Angular</strong>, and backend technologies to bring value to innovative projects. Eager to collaborate with diverse teams, I am committed to applying adept problem-solving skills to create efficient, user-centric solutions for a progressive organization.</p>
                         <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}><button>Let's Connect<ArrowRightCircle size={25}></ArrowRightCircle></button> </Nav.Link>
