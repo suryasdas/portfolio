@@ -1,6 +1,5 @@
 import { Nav, Col, Container, Row } from "react-bootstrap"
 import {ArrowRightCircle} from "react-bootstrap-icons"
-import headerImg from "../assets/img/header-img.svg"
 import { useState, useEffect } from "react"
 import portrait from "../assets/img/portrait.png"
 
@@ -19,6 +18,7 @@ export const Banner = () => {
             tick();
         },delta)
         return () => {clearInterval(ticker)}
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     },[text])
 
     const onUpdateActiveLink = (value) => {
@@ -59,7 +59,7 @@ export const Banner = () => {
                         </span>
                         <h1><span className="wrap">
                             {text}</span></h1>
-                        <p>A computer engineering graduate with a strong foundation in software development and technical consulting, is actively seeking engaging opportunities in the field. With a comprehensive academic background and hands-on experience in web application development, I aim to utilize expertise in React, Angular, and backend technologies to bring value to innovative projects. Eager to collaborate with diverse teams, I am committed to applying adept problem-solving skills to create efficient, user-centric solutions for a progressive organization.</p>
+                        <p>A <strong>computer engineering</strong> graduate with a strong foundation in web and software development, is actively seeking engaging opportunities in the field. With a comprehensive academic background and hands-on experience in <strong>web application</strong> development, I aim to utilize expertise in <strong>React</strong>, <strong>Angular</strong>, and backend technologies to bring value to innovative projects. Eager to collaborate with diverse teams, I am committed to applying adept problem-solving skills to create efficient, user-centric solutions for a progressive organization.</p>
                         <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}><button>Let's Connect<ArrowRightCircle size={25}></ArrowRightCircle></button> </Nav.Link>
                     </Col>
                     <Col xs ={12} md={6} xl={4}>

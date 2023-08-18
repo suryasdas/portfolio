@@ -38,31 +38,31 @@ export const Skills = () => {
                     <Col>
                     <div className='skill-bx'>
                       <h2>
-                        Skills
+                        SKILLS
                       </h2>
                       <Carousel responsive = {responsive} infinite = {true} className='skill-slider'>
                         <div className='item'>
-                          <img src={react} alt='' className='imground'/>
+                        <a href="https://react.dev" target="_blank" rel="noreferrer"><img src={react} alt='' className='imground'/></a>
                           <h5>React</h5>
                         </div>
                         <div className='item'>
-                          <img src={python} alt='' />
+                          <a href="https://www.python.org" target="_blank" rel="noreferrer"><img src={python} alt='' /></a>
                           <h5>Python</h5>
                         </div>
                         <div className='item'>
-                          <img src={angular} alt='' />
+                          <a href="https://angular.io" target="_blank" rel="noreferrer"><img src={angular} alt='' /></a>
                           <h5>Angular</h5>
                         </div>
                         <div className='item'>
-                          <img src={typescript} alt='' />
+                          <a href="https://www.typescriptlang.org" target="_blank" rel="noreferrer"><img src={typescript} alt='' /></a>
                           <h5>TypeScript</h5>
                         </div>
                         <div className='item'>
-                          <img src={javascript} alt='' />
+                          <a href="https://www.javascript.com" target="_blank" rel="noreferrer"><img src={javascript} alt='' /></a>
                           <h5>JavaScript</h5>
                         </div>
                         <div className='item'>
-                          <img src={django} alt='' />
+                          <a href="https://www.djangoproject.com" target="_blank" rel="noreferrer"><img src={django} alt='' /></a>
                           <h5>Django</h5>
                         </div>
                       </Carousel>

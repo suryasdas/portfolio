@@ -28,7 +28,7 @@ export const Projects = () => {
             <Container>
                 <Row>
                     <Col>
-                        <h2>Experience</h2>
+                        <h2>EXPERIENCE</h2>
                         <p></p>
                         <Tab.Container id="projects-tabs" defaultActiveKey='first'>
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
@@ -66,7 +66,7 @@ export const Projects = () => {
                                             iconStyle={{ background: 'linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%)', color: '#fff' }}
                                         // icon={<WorkIcon />}
                                         >
-                                            <h3 className="vertical-timeline-element-title">Software Development Intern</h3>
+                                            <h3>Software Development Intern</h3>
                                             <h5 className="vertical-timeline-element-subtitle">Technical Consulting and Research, Inc</h5>
                                             <h6 className="vertical-timeline-element-subtitle">New York, NY</h6>
                                             <p></p>

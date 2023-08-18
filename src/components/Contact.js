@@ -25,7 +25,7 @@ export const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setbuttonText('Sending...');
-        let response = await fetch("http://localhost:5000/contact", {
+        let response = await fetch("http://localhost:3000/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "Application/json;charset=utf-8"
@@ -51,7 +51,7 @@ export const Contact = () => {
                         <img src={contactImg} alt='Contact' />
                     </Col>
                     <Col md={6}>
-                        <h2>Get in touch</h2>
+                        <h2>GET IN TOUCH!</h2>
                         <form onSubmit={handleSubmit}>
                             <Row>
                                 <Col sm={6} className='px-1'>
@@ -67,7 +67,7 @@ export const Contact = () => {
                                     <input type='telephone' value={formDetails.phone} placeholder="Phone Number" onChange={(e) => onFormUpdate('phone', e.target.value)} />
                                 </Col>
                                 <Col>
-                                    <textarea row="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('phone', e.target.value)} />
+                                    <textarea row="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)} />
                                     <button type='submit'><span>{buttonText}</span></button>
                                 </Col>
                                 {

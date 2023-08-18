@@ -1,7 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { Col, Container, Row } from "react-bootstrap"
-import navIcon1 from "../assets/img/nav-icon1.svg"
-import navIcon2 from "../assets/img/nav-icon2.svg"
 
 export const Footer = () => {
 

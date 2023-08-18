@@ -1,4 +1,4 @@
-import { Col, Row, Container } from "react-bootstrap"
+import { Col } from "react-bootstrap"
 
 export const ProjectCard=({university, location, degree, gradDate, imgUrl})=>{
     return(
