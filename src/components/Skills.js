@@ -8,7 +8,8 @@ import angular from "../assets/img/angular.png"
 import django from "../assets/img/django.png"
 import typescript from "../assets/img/typescript.png"
 import javascript from "../assets/img/javascript.png"
-
+import java from "../assets/img/java.png"
+import aws from "../assets/img/aws.png"
 
 export const Skills = () => {
     const responsive = {
@@ -64,6 +65,14 @@ export const Skills = () => {
                         <div className='item'>
                           <a href="https://www.djangoproject.com" target="_blank" rel="noreferrer"><img src={django} alt='' /></a>
                           <h5>Django</h5>
+                        </div>
+                        <div className='item'>
+                          <a href="https://www.java.com/en/" target="_blank" rel="noreferrer"><img src={java} alt='' /></a>
+                          <h5>Java</h5>
+                        </div>
+                        <div className='item'>
+                          <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img src={aws} alt='' /></a>
+                          <h5>AWS Services</h5>
                         </div>
                       </Carousel>
                     </div>

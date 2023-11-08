@@ -127,7 +127,19 @@ export const Projects = () => {
                                         />
                                     </VerticalTimeline>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="third">Random text</Tab.Pane>
+                                <Tab.Pane eventKey="third">
+                                    <Row>
+                                        {
+                                            education.map((education, index) => {
+                                                return (
+                                                    <ProjectCard
+                                                        key={index}
+                                                        {...education} />
+                                                )
+                                            })
+                                        }
+                                    </Row>
+                                </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
