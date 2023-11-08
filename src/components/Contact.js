@@ -8,7 +8,6 @@ export const Contact = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-        console.log(form.current); // Add this line to log the form element to the console
         emailjs
         .sendForm(
             process.env.REACT_APP_SERVICE_ID,
@@ -18,7 +17,7 @@ export const Contact = () => {
         )
         .then(
             (result) => {
-            alert('Message sent successfully!');
+            alert('Email sent successfully!');
             console.log(result.text);
             },
             (error) => {
