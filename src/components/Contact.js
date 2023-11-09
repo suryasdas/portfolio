@@ -1,15 +1,13 @@
 import React, { useState, useRef } from 'react';
 import { Col, Container, Row } from "react-bootstrap";
 import contactImg from "../assets/img/contact-img.svg";
-
-// Note: You'll need to install emailjs-com with `npm install emailjs-com` or include it in your package.json dependencies.
 import emailjs from 'emailjs-com';
 
 export const Contact = () => {
     const form = useRef();
     const [formDetails, setFormDetails] = useState({
-        firstName: '',
-        lastName: '',
+        firstname: '',
+        lastname: '',
         email: '',
         countryCode: '',
         phone: '',
@@ -26,8 +24,8 @@ export const Contact = () => {
 
     const validateForm = () => {
         const errors = {};
-        if (!formDetails.firstName.trim()) errors.firstName = 'First name is required.';
-        if (!formDetails.lastName.trim()) errors.lastName = 'Last name is required.';
+        if (!formDetails.firstname.trim()) errors.firstname = 'First name is required.';
+        if (!formDetails.lastname.trim()) errors.lastname = 'Last name is required.';
         if (!formDetails.email.trim()) errors.email = 'Email is required.';
         if (!formDetails.countryCode.trim()) errors.countryCode = 'Country code is required.';
         if (!formDetails.phone.trim()) {
@@ -54,8 +52,8 @@ export const Contact = () => {
                 console.log(result.text);
                 // Reset form fields
                 setFormDetails({
-                    firstName: '',
-                    lastName: '',
+                    firstname: '',
+                    lastname: '',
                     email: '',
                     countryCode: '',
                     phone: '',
