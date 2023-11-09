@@ -79,12 +79,12 @@ export const Contact = () => {
                         <form ref={form} onSubmit={sendEmail} noValidate>
                             <Row>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" name="firstname" placeholder="First Name" value={formDetails.firstName} onChange={(e) => onFormUpdate('firstName', e.target.value)} />
-                                    {formErrors.firstName && <div className="error">{formErrors.firstName}</div>}
+                                    <input type="text" name="firstname" placeholder="First Name" value={formDetails.firstName} onChange={(e) => onFormUpdate('firstname', e.target.value)} />
+                                    {formErrors.firstname && <div className="error">{formErrors.firstname}</div>}
                                 </Col>
                                 <Col sm={6} className="px-1">
-                                    <input type="text" name="lastname" placeholder="Last Name" value={formDetails.lastName} onChange={(e) => onFormUpdate('lastName', e.target.value)} />
-                                    {formErrors.lastName && <div className="error">{formErrors.lastName}</div>}
+                                    <input type="text" name="lastname" placeholder="Last Name" value={formDetails.lastName} onChange={(e) => onFormUpdate('lastname', e.target.value)} />
+                                    {formErrors.lastname && <div className="error">{formErrors.lastname}</div>}
                                 </Col>
                                 <Col sm={6} className="px-1">
                                     <input type="email" name="email" placeholder="Email Address" value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)} />
