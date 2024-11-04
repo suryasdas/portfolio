@@ -43,7 +43,7 @@ export const NavBar = () => {
                         <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
                         <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
                         <Nav.Link href="#project" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Experience</Nav.Link>
-                        <Nav.Link href="https://drive.google.com/file/d/1DPt3_nexERPFymhbyH0cAzW9l-L-m5ma/view?usp=drive_link" target="_blank" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} >Resume</Nav.Link>
+                        <Nav.Link href="https://docs.google.com/document/d/1ly7qgf4NomHpv4TVxHPSA5UGZzIGKl73fk9mdKfkib4/edit?usp=sharing" target="_blank" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} >Resume</Nav.Link>
                         <Nav.Link href="#contact" className={activeLink === 'contact' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
                     </Nav>
                     <span className="navbar-text">
