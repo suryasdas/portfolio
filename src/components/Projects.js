@@ -198,7 +198,7 @@ export const Projects = () => {
 
                                 <Tab.Pane eventKey="third">
                                     <Row className="justify-content-md-center g-4">
-                                        <div class="justify-items-center grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-6xl">
+                                        <div class="justify-items-center grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 max-w-3xl">
                                             {projects.map((project, index) => (
                                                 <ProjectCard
                                                     key={index}
