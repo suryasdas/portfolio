@@ -4,7 +4,9 @@ import { Navbar, Container, Nav } from "react-bootstrap"
 import logo from "../assets/img/logo.png"
 import navIcon1 from "../assets/img/nav-icon1.svg"
 import navIcon2 from "../assets/img/pngwing.com-2.png"
-
+import { inject } from '@vercel/analytics';
+ 
+inject();
 
 export const NavBar = () => {
 
