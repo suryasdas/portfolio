@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 export const EducationCard = ({ university, location, degree, gradDate, imgUrl }) => {
     return (
-        <div class="w-11/12 bg-white  rounded-lg overflow-hidden h-80 flex flex-col justify-between proj-imgbx">
+        <div class="w-10/12 bg-white  rounded-lg overflow-hidden h-9/12 flex flex-col justify-between proj-imgbx">
             {/* <!-- Profile Image --> */}
             <div class="flex justify-center mt-6">
                 <img class="imgbck" src={imgUrl} alt="" />
