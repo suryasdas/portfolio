@@ -1,5 +1,4 @@
 import { Container, Button, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 export const Resume = () => {
   const docLink = "https://docs.google.com/document/d/e/2PACX-1vSby3E3pjZbVISFVbv4MnjF0RwZb-ReOmZcOF_NMksEsmYYG_dmvaQT5IcAbS18bmYJ5xwRVNtgyLbk/pub?embedded=true";
