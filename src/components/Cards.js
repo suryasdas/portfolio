@@ -30,7 +30,7 @@ export const EducationCard = ({ university, location, degree, gradDate, imgUrl }
 
 export const ProjectCard = ({ title, description, imgUrl, githubUrl, tags = [] }) => {
     return (
-        <div class="w-11/12 bg-white  rounded-lg overflow-hidden h-80 flex flex-col justify-between proj-imgbx">
+        <div class="w-11/12 rounded-lg overflow-hidden h-80 flex flex-col justify-between proj-imgbx2">
             {/* <!-- Profile Image --> */}
             <div class="flex justify-center mt-6">
                 <img class="w-48 h-40 rounded-lg" src={imgUrl} alt="" />
@@ -39,7 +39,7 @@ export const ProjectCard = ({ title, description, imgUrl, githubUrl, tags = [] }
 
             {/* <!-- Profile Info --> */}
             <div class="text-center px-6 py-4 ">
-                <h3 class="text-2xl font-semibold text-gray-900">{title}</h3>
+                <h3 class="text-2xl font-semibold text-white-900">{title}</h3>
                 <div className="proj-txtx">
                     <p className="text-xs text-white text-left">{description}</p>
                     <button onClick={() => window.open(githubUrl, '_blank', 'noopener,noreferrer')} className="text-xl text-white text-center">GitHub</button>

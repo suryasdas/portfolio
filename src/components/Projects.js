@@ -10,6 +10,8 @@ import gp from "../assets/img/gp.webp"
 import karsun from "../assets/img/karsun.jpeg"
 import album from "../assets/img/album.png"
 import messaging from "../assets/img/messaging.png"
+import sood from "../assets/img/sood.png"
+import lilli from "../assets/img/lilli.png"
 //import {nyu, csulb, awsconcierge, voluncheer} from "../assets/img/"
 import { EducationCard, ProjectCard, ExperienceCard } from "./Cards"
 import colorSharp2 from "../assets/img/color-sharp2.png"
@@ -56,7 +58,7 @@ export const Projects = () => {
     },
     {
         title: "AI Chatflow",
-        tags: ["AWS", "OpenAI", "WebSockets", "React","Docker"],
+        tags: ["AWS", "OpenAI", "WebSockets", "React", "Docker"],
         description: "Real-time messaging platform with features improving user engagement and communication efficiency.",
         imgUrl: messaging,
         githubUrl: "https://github.com/nicksome168/aws-ai-chatflow"
@@ -70,7 +72,7 @@ export const Projects = () => {
     },
     {
         title: "Portfolio",
-        tags: ["React", "Typescript","Tailwind"],
+        tags: ["React", "Typescript", "Tailwind"],
         description: "A professional portfolio website showcasing skills, projects, and experience, designed to highlight expertise and attract potential clients or employers.",
         imgUrl: name,
         githubUrl: "https://github.com/suryasdas/portfolio"
@@ -78,6 +80,31 @@ export const Projects = () => {
     ];
 
     const experience = [
+        {
+            date: "March 2025 – Present",
+            company: "Lilli Technology",
+            title: "Full Stack Engineer",
+            location: "Remote",
+            logo: lilli,
+            description: [
+                "Designed and deployed backend (FastAPI, PostgreSQL) and frontend (React, Next.js, TypeScript) systems for a pharmaceutical revenue management platform, enabling a scalable product launch within three months.",
+                "Developed a scalable batch-processing pipeline to ingest and validate sales files with 10,000+ records, improving ingestion speed and supporting daily processing volumes of over 500K records.",
+                "Built fullstack modules for data auditing and correction, improving system traceability and reducing data-related errors, enhancing overall platform reliability and compliance readiness.",
+                "Contributed to production releases from the first week as part of a 4-person engineering team, driving rapid iteration cycles and maintaining strong ownership of key features."]
+        },
+        {
+            date: "July 2024 – Present",
+            company: "SOOD",
+            title: "Web Developer (Freelance) ",
+            location: "New York, NY",
+            logo: sood,
+            description: [
+                "Maintained and enhanced an e-commerce platform using React, Gatsby, and Shopify APIs, optimizing app performance and backend integration.",
+                "Upgraded core functionality by migrating from deprecated Checkout API to Shopify’s Cart API, ensuring stability and future compliance.",
+                "Shipped new UI features based on founder feedback, improving user experience and reducing frontend bugs across deployment cycles.",
+                "Deployed updates through Netlify CI/CD, and managed API integrations using GraphQL to power dynamic product and cart flows."
+            ]
+        },
         {
             date: "January 2024 – May 2024",
             company: "GreenPortfolio",
@@ -90,7 +117,7 @@ export const Projects = () => {
                 "Validated and formatted hundreds of data points to develop an internal API, facilitating real-time data transmission to Bubble enhancing the user interface.",
                 "Architected a function to summarize data and generate reports using OpenAI API, Google Appsheets streamlining report generation and improving decision-making processes.",
                 "Programmed a new pipeline that ingests data from the SEC to create a matching service algorithm for clients and advisors, aiming toenhance service delivery."
-        ]
+            ]
         },
         {
             date: "June 2023 - August 2023",
@@ -114,7 +141,7 @@ export const Projects = () => {
                 "Designed and developed web-based application using Angular framework and JavaScript programming language to generate reports for government clients, resulting in a 30% increase in efficiency and accuracy of report generation.",
                 "Created a user-friendly UI utilizing forms and existing Angular component libraries such as PrimeNg, resulting in a 60% improvement in user satisfaction and adoption.",
                 "Implemented form validations and utilized REST services to deliver data to backend, resulting in a 25% reduction in data entry errors and increasing data accuracy."
-    ]
+            ]
         },
         {
             date: "June 2020 - August 2020",
@@ -155,18 +182,18 @@ export const Projects = () => {
                                 <Tab.Pane eventKey="first">
                                     <Row className="justify-content-md-center gap-2" >
                                         <div class="justify-items-center grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
-                                        {
-                                            education.map((education, index) => {
-                                                return (
-                                                    
+                                            {
+                                                education.map((education, index) => {
+                                                    return (
+
                                                         <EducationCard
                                                             key={index}
                                                             {...education} />
-                                                    
-                                                )
-                                            })
-                                        }
-                                        </div>                                        
+
+                                                    )
+                                                })
+                                            }
+                                        </div>
                                     </Row>
                                 </Tab.Pane>
 
